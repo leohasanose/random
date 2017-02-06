@@ -5,7 +5,26 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
+
     
+    makeRect(0,0, 200, 100,"lightblue")
+    
+
+
+makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 0, 0, 200, 100)
+makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 20, 0, 20, 100, 0.4)
+
+makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 10, 0, 100, 10, 0.8)
+
+
+makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 10, 50, 100, 10, 0.4)
+
+
+
+
+
+
+
 }
 
 
@@ -13,7 +32,36 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+   
+ makeRect(0,0, 200, 100,"red")
+
+makeImage("https://i.ytimg.com/vi/G7urFo0wbHc/maxresdefault.jpg" , 0, 0, 200, 100, 0.3)
+makeText("n", 2, 15, 2)
+makeText("o", 3, 15, 10)
+makeText("w", 8, 15, 5)
+
+makeText("l", 14, 15, 15)
+makeText("o", 17, 15, 9)
+makeText("o", 20, 15, 13)
+makeText("k", 25, 15, 6)
+
+makeText("a", 29, 15, 14)
+makeText("t", 39, 15, 7)
+
+makeText("t", 38, 15, 8)
+makeText("h", 42, 15, 2)
+makeText("i", 45,15, 10)
+makeText("s", 48, 15, 7)
+
+makeText("n", 54, 15, 5)
+makeText("e", 57,15, 10)
+makeText("t", 60, 15, 8)
+
+
+
+
+
+
 }
 
 
@@ -21,7 +69,37 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+     makeRect(0,0, 200, 100,"blue")
+
+makeEllipse(50, 50, 15, 10, "green")
+makeLine(50, 50, 70, 70, "green", 10)
+ makeRect(60,60, 50, 20,"green")
+makeText("( ͡° ͜ʖ ͡°)", 45, 50, 5)
+makePolygon("110,70 70,60 150,50", "blue")
+makeRect(60,79,10,20,"green")
+makeRect(90,79, 10, 20, "green")
+makePolygon("109,70 109,80 200,75","green")
+makeRect(60, 94, 20,50)
+makeRect(90, 94, 20, 50)
+makeCircle(65, 98, 2,"white")
+makeCircle(95, 98, 2,"white")
+makeText("( ͡° ͜ʖ ͡°)", 63, 98, 1.5)
+makeCircle(10, 10, 10,"white")
+makeCircle(15,10, 10,"white")
+makeCircle(15, 15, 10,"white")
+makeCircle(20, 15, 10,"white")
+makeCircle(30, 10, 10,"white")
+makeCircle(35, 0, 10,"white")
+makeCircle(34, 15, 10,"white")
+makeCircle(50, 15, 10,"white")
+makeCircle(54, 15, 10,"white")
+makeText("( ͡° ͜ʖ ͡°)", 10, 15, 2)
+makeText("( ͡° ͜ʖ ͡°)", 20, 10, 2)
+makeText("( ͡° ͜ʖ ͡°)", 53, 9, 2)
+makeText("( ͡° ͜ʖ ͡°)", 36, 20, 2)
+makeText("( ͡° ͜ʖ ͡°)", 25, 16, 2)
+makeText("( ͡° ͜ʖ ͡°)", 15, 7, 2)
+
 }
 
 
@@ -32,18 +110,30 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var number = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
+    if(number < 0.33){
     
+        createFirstScene();
+    
+    }
     
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
     
+    else if(number < 0.67){
     
+        createSecondScene();
+    
+    }
     
     // Else, call the function to create your third scene.
     
+    else{
     
+    createThirdScene();
+    
+    }
     
 }
 
