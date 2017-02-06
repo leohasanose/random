@@ -6,9 +6,10 @@ var namespace = "http://www.w3.org/2000/svg"
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
 
-    
+   var Xtra-Random = Math.random() 
     makeRect(0,0, 200, 100,"lightblue")
     
+if(Xtra-Random < .9){
 
 
 makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 0, 0, 200, 100)
@@ -25,6 +26,31 @@ makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}else{
+
+makeImage("https://pbs.twimg.com/profile_images/687551008868712449/U_cyTkxQ.jpg",0,0,200,100)
+}
+
+
 }
 
 
@@ -35,6 +61,13 @@ function createSecondScene() {
    
  makeRect(0,0, 200, 100,"red")
 
+ var random2 = Math.random()
+ 
+ 
+ 
+ 
+ if(random2 < .9)
+ 
 makeImage("https://i.ytimg.com/vi/G7urFo0wbHc/maxresdefault.jpg" , 0, 0, 200, 100, 0.3)
 makeText("n", 2, 15, 2)
 makeText("o", 3, 15, 10)
@@ -56,9 +89,6 @@ makeText("s", 48, 15, 7)
 makeText("n", 54, 15, 5)
 makeText("e", 57,15, 10)
 makeText("t", 60, 15, 8)
-
-
-
 
 
 
