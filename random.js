@@ -6,10 +6,10 @@ var namespace = "http://www.w3.org/2000/svg"
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
 
-   var Xtra-Random = Math.random() 
+   var XtraRandom = Math.random() 
     makeRect(0,0, 200, 100,"lightblue")
     
-if(Xtra-Random < .9){
+if(XtraRandom < .9){
 
 
 makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 0, 0, 200, 100)
@@ -21,14 +21,16 @@ makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg"
 makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 10, 50, 100, 10, 0.4)
 
 
+makeEllipse(50, 50, 30, 20, "yellow")
 
+makeEllipse(50,30, 10, 20, "Azure")
 
+makeCircle(70,50,2)
 
-
-
-
-
-
+makeLine(65, 40, 75, 50, "black", 1)
+makeLine(30,35,30,65,"black",1)
+makeLine(40,30,40,70,"black",1)
+makeLine(10,50,20,50,"black",1)
 
 
 
@@ -66,7 +68,7 @@ function createSecondScene() {
  
  
  
- if(random2 < .9)
+ if(random2 < .9){
  
 makeImage("https://i.ytimg.com/vi/G7urFo0wbHc/maxresdefault.jpg" , 0, 0, 200, 100, 0.3)
 makeText("n", 2, 15, 2)
@@ -90,6 +92,18 @@ makeText("n", 54, 15, 5)
 makeText("e", 57,15, 10)
 makeText("t", 60, 15, 8)
 
+ makeLine(128,42,128,48,"black",1)
+ makeLine(128,48,135,48,"black",1)
+ 
+ 
+ 
+ 
+ 
+ }else{
+
+makeImage("http://vignette4.wikia.nocookie.net/spongebob/images/1/14/Flatts_The_Flounder_(Texas).jpg/revision/latest?cb=20130327193930",0 , 0, 200,100)
+
+}
 
 
 }
@@ -101,6 +115,10 @@ makeText("t", 60, 15, 8)
 function createThirdScene() {
      makeRect(0,0, 200, 100,"blue")
 
+     var r = Math.random()
+     
+     
+     if(r < .9){
 makeEllipse(50, 50, 15, 10, "green")
 makeLine(50, 50, 70, 70, "green", 10)
  makeRect(60,60, 50, 20,"green")
@@ -130,10 +148,14 @@ makeText("( ͡° ͜ʖ ͡°)", 36, 20, 2)
 makeText("( ͡° ͜ʖ ͡°)", 25, 16, 2)
 makeText("( ͡° ͜ʖ ͡°)", 15, 7, 2)
 
+}else{
+
+makeImage("https://pbs.twimg.com/media/CXnorptUoAEsfxr.jpg", 0 , 0, 200,100)
+
 }
 
 
-
+}
 
 
 // FILL IN THIS FUNCTION!
