@@ -163,8 +163,11 @@ makeText("( ͡° ͜ʖ ͡°)", 15, 7, 2)
 makeImage("https://pbs.twimg.com/media/CXnorptUoAEsfxr.jpg", 0 , 0, 200,100)
 makeImage("http://vignette1.wikia.nocookie.net/joke-battles/images/c/c7/Alternate_Morbid_Patrick.jpg/revision/latest?cb=20151204062709",0,0,200,100,0.2)
 
-makeRect(0,0,10,40,"peach")
-
+makeRect(0,0,10,40,"white")
+makeRect(0,40,25,10,"white")
+makeRect(30,10,30,10,"white")
+makeRect(45,10,10,40,"white")
+makeText("D AN",100,20,5,"barrio","white")
 }
 
 
