@@ -101,9 +101,19 @@ makeText("t", 60, 15, 8)
  
  }else{
 
-makeImage("http://vignette4.wikia.nocookie.net/spongebob/images/1/14/Flatts_The_Flounder_(Texas).jpg/revision/latest?cb=20130327193930",0 , 0, 200,100)
+makeImage("http://i1.kym-cdn.com/photos/images/facebook/001/076/734/879.jpg", 0,0,200,100)
+     
+     
+     makeImage("http://vignette4.wikia.nocookie.net/spongebob/images/1/14/Flatts_The_Flounder_(Texas).jpg/revision/latest?cb=20130327193930",0 , 0, 200,100,0.6)
+     
+     makeImage("https://i.ytimg.com/vi/dKAg9zNbLf0/hqdefault.jpg",0,0,200,100,0.3)
 
-}
+     makeImage("")
+     
+makeRect(10,10,40,40,"purple")
+ makeText("Gi Ve It uP fo R dA Y 2 3", 0, 20, 10, "Creepster", "red")
+ 
+ }
 
 
 }
@@ -151,6 +161,9 @@ makeText("( ͡° ͜ʖ ͡°)", 15, 7, 2)
 }else{
 
 makeImage("https://pbs.twimg.com/media/CXnorptUoAEsfxr.jpg", 0 , 0, 200,100)
+makeImage("http://vignette1.wikia.nocookie.net/joke-battles/images/c/c7/Alternate_Morbid_Patrick.jpg/revision/latest?cb=20151204062709",0,0,200,100,0.2)
+
+makeRect(0,0,10,40,"peach")
 
 }
 
