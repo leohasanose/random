@@ -9,7 +9,7 @@ function createFirstScene() {
    var XtraRandom = Math.random() 
     makeRect(0,0, 200, 100,"lightblue")
     
-if(XtraRandom < .9){
+if(XtraRandom > .9){
 
 
 makeImage("https://pbs.twimg.com/profile_images/735611143423565824/4ggYDBHU.jpg" , 0, 0, 200, 100)
@@ -50,6 +50,12 @@ makeLine(10,50,20,50,"black",1)
 }else{
 
 makeImage("https://pbs.twimg.com/profile_images/687551008868712449/U_cyTkxQ.jpg",0,0,200,100)
+
+makeText("h e y th er e  ki d s", 0,10,5,"Cedarville+Cursive","orange")
+
+makeCircle(70,35,10,"red",0.3)
+makeCircle(138,35,10,"red",0.3)
+
 }
 
 
@@ -68,7 +74,7 @@ function createSecondScene() {
  
  
  
- if(random2 < .9){
+ if(random2 > .9){
  
 makeImage("https://i.ytimg.com/vi/G7urFo0wbHc/maxresdefault.jpg" , 0, 0, 200, 100, 0.3)
 makeText("n", 2, 15, 2)
@@ -128,7 +134,7 @@ function createThirdScene() {
      var r = Math.random()
      
      
-     if(r < .9){
+     if(r > .9){
 makeEllipse(50, 50, 15, 10, "green")
 makeLine(50, 50, 70, 70, "green", 10)
  makeRect(60,60, 50, 20,"green")
